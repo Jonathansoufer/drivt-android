@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">onBoardingDrivt</string>
+    <string name="slide1Description">Muito obrigado por escolher-nos como seu assistente pessoal de corridas. Conosco, não perde uma única corrida.</string>
+    <string name="slide2Description">Para poder extrair o máximo de nossa aplicativo, pedimos que nos dê acesso a localização e habilite a acessibilidade</string>
+    <string name="slide3Description">Já temos tudo o que precisamos para poder ser o seu parceiro nas corridas diárias</string>
+    <string name="slide4Description">Agora cada um faz o seu melhor. Nós lidamos com os vários aplicativos e você em conduzir e oferecer uma experiência singular para o seu passageiro.</string>
+</resources>
