@@ -1,12 +1,23 @@
 package com.lab.drivt;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.text.Html;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.lab.drivt.utils.Tools;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView[] mDots;
     private SliderAdapter sliderAdapter;
+
 
     @Override
     // The onCreate methods is equivalent to the useEffect hook in React. This method is called when the activity starts.
@@ -37,6 +49,12 @@ public class MainActivity extends AppCompatActivity {
 
         //Setting a listener to detect whenever the page changes.
         mSliderViewPaper.addOnPageChangeListener(viewListener);
+
+        if (!Tools.internalIsAccessibilityOn(MainActivity.this, DrivtService.class)) {
+            Intent intent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
+            startActivity(intent);
+            return;
+        }
     }
 
     public void addDotsIndicator(int position){
@@ -73,4 +91,10 @@ public class MainActivity extends AppCompatActivity {
 
         }
     };
+
+    public void GoHome(View view)
+    {
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+    }
 }

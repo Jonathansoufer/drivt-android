@@ -1,4 +1,4 @@
-package com.drivt.providers;
+package com.lab.drivt.providers;
 
 import android.accessibilityservice.AccessibilityService;
 import android.content.Intent;
@@ -8,8 +8,8 @@ import android.view.accessibility.AccessibilityNodeInfo;
 
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import com.drivt.interfaces.DriverInterface;
-import com.drivt.utils.Tools;
+import com.lab.drivt.interfaces.DriverInterface;
+import com.lab.drivt.utils.Tools;
 
 import java.util.List;
 
