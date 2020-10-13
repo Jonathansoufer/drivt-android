@@ -17,18 +17,25 @@ public class MainActivity extends AppCompatActivity {
     private SliderAdapter sliderAdapter;
 
     @Override
+    // The onCreate methods is equivalent to the useEffect hook in React. This method is called when the activity starts.
     protected void onCreate(Bundle savedInstanceState) {
+        // This super is the constructor
         super.onCreate(savedInstanceState);
+        // setContentView sets to which layout XML this activity is related.
         setContentView(R.layout.activity_main);
 
+        // Setting local variable based on R = Resource elements within the layout based on their ids. Each element in a layout must have an ID.
+        // name for the variable + type + findViewById method passing the element ID required.
         mSliderViewPaper = (ViewPager) findViewById(R.id.sliderView);
         mDotLayout = (LinearLayout) findViewById(R.id.dotsContainer);
+
 
         sliderAdapter = new SliderAdapter(this);
         mSliderViewPaper.setAdapter(sliderAdapter);
 
         addDotsIndicator(0);
 
+        //Setting a listener to detect whenever the page changes.
         mSliderViewPaper.addOnPageChangeListener(viewListener);
     }
 

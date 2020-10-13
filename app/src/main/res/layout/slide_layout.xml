@@ -29,6 +29,8 @@
         android:layout_below="@id/slide1Title"
         android:padding="35dp"
         android:text="Muito obrigado por escolher-nos como seu assistente pessoal de corridas. Conosco, não perderás uma única corrida."
+        android:textAlignment="center"
         android:textColor="@color/colorTransparentWhite"
         android:textSize="16sp" />
+
 </RelativeLayout>

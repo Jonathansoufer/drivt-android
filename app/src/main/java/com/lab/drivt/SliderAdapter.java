@@ -41,10 +41,6 @@ public class SliderAdapter extends PagerAdapter {
             "Para poder extrair o máximo de nossa aplicativo, pedimos que nos dê acesso a localização e habilite a acessibilidade",
             "Já temos tudo o que precisamos para poder ser o seu parceiro nas corridas diárias",
             "Agora cada um faz o seu melhor. Nós lidamos com os vários aplicativos e você em conduzir e oferecer uma experiência singular para o seu passageiro."
-//            context.getString(R.string.slide1Description),
-//            context.getString(R.string.slide2Description),
-//            context.getString(R.string.slide3Description),
-//            context.getString(R.string.slide4Description),
     };
 
     @Override
