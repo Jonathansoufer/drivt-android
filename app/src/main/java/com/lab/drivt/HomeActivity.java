@@ -57,8 +57,8 @@ public class HomeActivity extends AppCompatActivity {
 					provider = intent.getStringExtra("provider");
 					status = intent.getStringExtra("status");
 
-					TextView lblStatus = (TextView)findViewById(R.id.statusLbl);
-					lblStatus.setText(status);
+//					TextView lblStatus = (TextView)findViewById(R.id.statusLbl);
+//					lblStatus.setText(status);
 
 					/*if(status.equals("serviceJustEnabled"))
 					{
